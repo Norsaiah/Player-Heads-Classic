@@ -1,6 +1,5 @@
 package me.norsaiah.listener;
 
-import me.norsaiah.PlayerHeads;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,12 +11,6 @@ import org.bukkit.inventory.meta.SkullMeta;
 import java.util.Collections;
 
 public class PlayerDeathListener implements Listener {
-    PlayerHeads plugin;
-
-    public PlayerDeathListener(PlayerHeads plugin) {
-        this.plugin = plugin;
-    }
-
     @EventHandler
     void onDeath(PlayerDeathEvent event) {
         Player player = event.getEntity();
