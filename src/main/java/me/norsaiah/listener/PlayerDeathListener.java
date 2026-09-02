@@ -20,7 +20,7 @@ public class PlayerDeathListener implements Listener {
             ItemStack skull = new ItemStack(Material.SKULL_ITEM, 1, (short) 3);
 
             SkullMeta meta = (SkullMeta) skull.getItemMeta();
-            meta.setOwner(killer.getName());
+            meta.setOwner(player.getName());
             meta.setLore(Collections.singletonList("Killed by " + killer.getName()));
 
             skull.setItemMeta(meta);
